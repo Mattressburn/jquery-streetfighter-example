@@ -42,9 +42,9 @@ function playGame() {
         {'left': '300px'},
         500,
         function() {
-          $(this).stop();
-          $(this).hide();
-          $(this).css('left', '-212px');
+          $('.hadouken').stop();
+          $('.hadouken').hide();
+          $('.hadouken').css('left', '-212px');
         }
       );
   })
@@ -73,11 +73,11 @@ function doIntro() {
   $('#theme-song')[0].volume = 0.3;
   $('#theme-song')[0].play();
   $('.sf-logo').fadeIn(3500, function() {
-    $(this).fadeOut(1000, function() {
+    $('.sf-logo').fadeOut(1000, function() {
       $('.brought-by').fadeIn(1500, function() {
-        $(this).fadeOut(1000, function() {
+        $('.brought-by').fadeOut(1000, function() {
           $('.jquery-logo').fadeIn(1500, function() {
-            $(this).fadeOut(1500, function() {
+            $('.jquery-logo').fadeOut(1500, function() {
               $('.how-to').fadeIn(1000);
             });
           })
